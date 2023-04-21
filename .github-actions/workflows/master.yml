@@ -14,8 +14,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: sftp.thenativeblackobserver.com
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
+        ftp-server: sftp.thenativeblackobserver.com
+        ftp-username: ${{ secrets.ftp_username }}
+        ftp-password: ${{ secrets.ftp_password }}
         port: ${{ secrets.port }}
         server-dir: /var/www/thenativeblackobserver.com/
