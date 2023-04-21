@@ -23,9 +23,9 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          username: www-data
-          server: thenativeblackobserver.com
-          port: 22 # default is 22
+          username: alan
+          server: 68.188.8.233
+          port: 22033 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
  
           
